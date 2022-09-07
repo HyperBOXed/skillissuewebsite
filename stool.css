@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "vcr";
+  src: url("./fontz/VCR_OSD_Mono.ttf");
+}
+@-webkit-keyframes cring {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes cring {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@-webkit-keyframes aniratio {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+@keyframes aniratio {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "vcr";
+}
+* body {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+* #h1main {
+  text-align: center;
+  font-size: 100px;
+  margin-top: 32px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+* .oh {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+* .oh #hpimg {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  left: 25%;
+  bottom: 0;
+  opacity: 0.3;
+  z-index: 1;
+}
+* #h1rolls {
+  padding: 30px;
+}
+* #rollbtn {
+  padding: 32px;
+  font-size: 32px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+* .rollbtnlight {
+  background: rgb(175, 175, 175);
+  color: rgb(0, 0, 0);
+}
+* .rollbtnlight:hover {
+  background: rgb(165, 165, 165);
+}
+* .rollbtnlight:active {
+  background: rgb(155, 155, 155);
+}
+* .rollbtndark {
+  background: rgb(50, 50, 50);
+  color: rgb(215, 215, 215);
+}
+* .rollbtndark:hover {
+  background: rgb(40, 40, 40);
+}
+* .rollbtndark:active {
+  background: rgb(30, 30, 30);
+}
+* .center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+* .center h1 {
+  text-align: center;
+}
+* .scratchthing {
+  width: 90%;
+  height: 700px;
+}
+* .hm {
+  display: flex;
+  justify-content: space-between;
+}
+* .hm .cringe {
+  width: 100%;
+  height: 600px;
+  -webkit-animation: "cring";
+          animation: "cring";
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  background-size: cover;
+}
+* .hm .cringe .rainbowdiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  -webkit-animation: aniratio 1s linear infinite;
+          animation: aniratio 1s linear infinite;
+  background: linear-gradient(0deg, red, orange, yellow, lime, cyan, blue, violet);
+}
+* .hm .cringe #mainimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border: 0;
+  top: 0;
+}
+* .hm .rainbow {
+  -webkit-animation: aniratio 1s linear infinite;
+          animation: aniratio 1s linear infinite;
+}/*# sourceMappingURL=stool.css.map */
